@@ -10,8 +10,8 @@ ifeq ($(REPORTER),desc)
  -include Makefile-desc.mk
 endif
 
-CXX	:=	g++
-CXXFLAGS := -std=c++11 -I${mploc}/include/
+CXX	:= g++
+CXXFLAGS:= -std=c++11 -I${mploc}/include/
 LDFLAGS := -L${mploc}/lib -lUnitTest++ ${reporter_dir}/${reporter_lib}
 
 .PHONY: reporters
