@@ -10,6 +10,8 @@ ifeq ($(REPORTER),desc)
  -include Makefile-desc.mk
 endif
 
+mploc := /opt/local
+
 CXX	:= g++
 CXXFLAGS:= -std=c++11 -I${mploc}/include/
 LDFLAGS := -L${mploc}/lib -lUnitTest++ ${reporter_dir}/${reporter_lib}
