@@ -97,7 +97,7 @@ namespace UnitTest
     cout << pad2 << setm(red) << title << endl;
     cout << pad  << ' '       << fill( '-', title.size() - 1 ) << endm() << endl;
     cout << pad2 << ' '       << setm(cyan) << failure << endl;
-     cout << pad2 << ' '       << test.filename << " : " << test.lineNumber << endm();
+    cout << pad2 << ' '       << test.filename << " : " << test.lineNumber << endm();
     cout << endl << endl;
  }
   
